@@ -1,0 +1,124 @@
+<html>
+<head><center><font size="6"><strong> TÌM HIỂU VỀ CÔNG NGHỆ GITHUD</strong></font></center><head>
+<style>
+body{
+background-image: url("images.jpg");
+backgrounf-color: #654654;
+}
+</style>
+<body>
+<h2>I. Một số khái niệm về githud</h2>
+<p>GitHub là một hệ thống quản lý dự án và phiên bản code, hoạt động giống như một mạng xã hội cho lập trình viên. Nhưng cách sử dụng GitHub như thế nào? Nó sử dụng để hợp tác nhiều người lại với nhau, từ mọi nơi trên thế giới, lên kế hoạch, theo dõi và làm chung một dự án.
+GitHub cũng là một nền tảng lưu trữ online lớn nhất trên thế giới về các dự án nhiều người làm.</p>
+
+<p>GitHub là tên gọi của một Hệ thống quản lý phiên bản phân tán (Distributed Version Control System – DVCS) là một trong những hệ thống quản lý phiên bản phân tán phổ biến nhất hiện nay. DVCS nghĩa là hệ thống giúp mỗi máy tính có thể lưu trữ nhiều phiên bản khác nhau của một mã nguồn được nhân bản (clone) từ một kho chứa mã nguồn (repository), mỗi thay đổi vào mã nguồn trên máy tính sẽ có thể ủy thác (commit) rồi đưa lên máy chủ nơi đặt kho chứa chính. Và một máy tính khác (nếu họ có quyền truy cập) cũng có thể clone lại mã nguồn từ kho chứa hoặc clone lại một tập hợp các thay đổi mới nhất trên máy tính kia. Trong Git, thư mục làm việc trên máy tính gọi là Working Tree.</p>
+
+
+
+<img src="g1.png" width="800" height="400"/>
+
+<p><strong>Git là gì?</strong> <br>
+Trước tiên, chúng ta cần phải biết rõ Git là gì trước, vì nó là trái tim của GitHub. Git là một hệ quản trị phiên bản được phát triển bởi Linus Torvalds (tên rất quen phải không, người tạo ra Linux đó).</p>
+<p><strong>Vậy, hệ quản trị phiên bản – version control system là gì?</strong>
+<br>
+
+Khi lập trình viên tạo một dự án mới, họ sẽ cần liên tục cập nhật mã nguồn. Kể cả khi dự án đã được xuất bản, họ vẫn cần phải cập nhật các phiên bản mới cho nó, sửa lỗi, thêm tính năng, vâng vâng.
+
+Hệ quản trị phiên bản sẽ giúp giám sát những thay đổi của code. Hơn thế nữa, nó còn lưu lại thông tin ai thay đổi gì để có thể khôi phục code cũ bị xóa hoặc code đã từng được sửa.
+
+Codes không được ghi đè lên nhau vì Git lưu nhiều phiên bản copies trong repository (thư viện) của nó.
+</p>
+<p><strong>Hub là gì?</strong> 
+<br>
+Nếu Git là trái tim của GitHub thì Hub lại là phần hồn của nó. Hub trong GitHub là nơi biến những dòng lệnh, Git, thành một mạng xã hội khổng lồ cho lập trình viên.
+
+Bên cạnh đóng góp vào những dự án chính, GitHub còn cho phép người dùng tương tác theo kiểu mạng xã hội. Bạn có thể theo dõi, và xem những người bạn thích làm gì, họ đang kết nối với ai, vâng vâng.
+</p>
+<p><strong>Repository</strong>
+<br>
+Repository hay repo là một thư viện nơi chứa các files của dự án. Nó có thể đặt trong bộ lưu trữ của GitHub hoặc trong repository của máy tính local. Bạn có thể chứa files code, hình ảnh, âm thanh hoặc mọi thứ liên quan đến dự án trong một repository.</p>
+
+<p><strong>Branch</strong>
+<br>
+Branch là một bản sao của repository. Bạn có thể sử dụng Branch để triển khai dự án theo hướng cô lập không ảnh hưởng đến dự án chính.
+
+Làm việc với branch vì vậy sẽ không ảnh hưởng tới repostiroy chính hoặc những branches khác. Nếu bạn hoàn tất công việc, bạn có thể “Merge” (nhập) branch vào những branch khác khoặc repository chính bằng cách dùng lệnh Pull Request.</p>
+
+<p><strong>Pull Request</strong>
+<br>
+Pull request có nghĩa là bạn thông báo với những người khác rằng bạn đã đẩy những thay đổi của Branch lên Repository tổng (master respository). Các cộng tác viên của repository này ẽ có chấp nhật hoặc từ chối pull request này. Khi nó được mở ra, bạn có thể thảo luận và xem lại công việc với những người cùng làm khác.</p>
+
+Các bước để tạo một pull request trong GitHub là:
+
+Chuyển tới repository và tìm menu branch
+Trong branch menu, chọn branch chứa thay đổi của bạn
+Nhấn vào nút New pull request bên cạnh menu branch
+Thêm tiêu đề và mô tả vào pull request của bạn
+Nhấn nút Create pull request
+Fork một Repository
+Fork một repository (forking a repository) có nghĩa là bạn tạo một dự án mới dựa trên dự án cũ. Tức là, sao chép hoàn toàn một repository đã tồn tạo, tạo ra các thay đổi cần thiết, và lưu phiên bản mới này dưới dạng một repository độc lập hoàn toàn mới và gọi nó là dự án của riêng bạn.
+
+Tính năng này vô cùng tiện lợi để đẩy nhanh tiến độ dự án. Vì là một dứ án hoàn toàn mới, repository chính sẽ không bị ảnh hưởng. Nếu repostiory master được cập nhật, bạn cũng có thể áp dụng các cập nhật đó lên bản fork của bạn.
+
+Các bước để fork một repository trong GitHub là:
+<ul>
+<li> Chuyển tới repository và tìm menu branch</li>
+<li> Trong branch menu, chọn branch chứa thay đổi của bạn</li>
+<li> Nhấn vào nút New pull request bên cạnh menu branch</li>
+<li> Thêm tiêu đề và mô tả vào pull request của bạn</li>
+<li> Nhấn nút Create pull request</li>
+</ul>
+<h2>II. Tại sao nên sử dụng githud?</h2>
+<p>
+
+Có rất nhiều lợi thế để bạn nên sử dụng Git trong việc lập trình ngay từ hôm nay, bất kể là lập trình cái gì đi chăng nữa :
+<br>
+<ul>
+<li>Git dễ sử dụng, an toàn và nhanh chóng.</i>
+<li>Có thể giúp quy trình làm việc code theo nhóm đơn giản hơn rất nhiều bằng việc kết hợp các phân nhánh (branch).</li>
+<li>Bạn có thể làm việc ở bất cứ đâu vì chỉ cần clone mã nguồn từ kho chứa hoặc clone một phiên bản thay đổi nào đó từ kho chứa, hoặc một nhánh nào đó từ kho chứa.</li>
+<li>Dễ dàng trong việc deployment sản phẩm</i>
+<li>Và nhiều hơn thế nữa.</li>
+</ul>
+<h4> Bạn có thể đăng kí để sử dụng githud <a href="https://o7planning.org/vi/10283/huong-dan-su-dung-github-voi-github-desktop">tại đây</a></h4>
+
+</p>
+<br>
+<h4>Hoặc làm như sau đây:</h4>
+<br>
+B1: Điền các thông tin đầy đủ chính xác vào form.
+<br> Sau đó nhấn vào <strong> Sign up for GitHub</strong>
+<br>
+
+<img src="1.png" width="800" height="400"/>
+<br>
+<br>
+B2: Nhấn vào Verify rồi tùy chỉnh con vật để đi tiếp.
+
+<br>
+
+<img src="4.png" width="800" height="400"/>
+<br>
+<br>
+B3: Chọn bên phần free sau đó nhấn continue.
+
+<br>
+<img src="3.png" width="800" height="400"/>
+<br>
+<br>
+B4: Chọn các chỉ tiêu mục đích khi tạo githud sau đó click <strong> Sumbit</strong>.
+
+<br>
+<img src="2.png" width="800" height="400"/>
+<br>
+<br>
+
+B5: Githud gửi mã xác nhận về email đã đăng kí ở trên, vào email để xác nhận.
+
+<br>
+<img src="5.png" width="800" height="400"/>
+
+
+</body>
+
+</html>
