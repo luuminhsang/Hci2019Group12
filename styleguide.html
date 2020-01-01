@@ -41,53 +41,6 @@ color:	white;
     transition: 0.3s;
     font-size: 15px;
 }
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #7971EA;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 360px;
-}
-
    
 		
 	  </style>
@@ -117,11 +70,11 @@ body {font-family: "Lato", sans-serif;}
             <nav class="site-navigation position-relative text-right" role="navigation">
              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#home-section" class="nav-link ">Home</a></li>
-                <li><a href="project.html" class="nav-link ">Project</a></li>
+                <li><a href="project.html" class="nav-link active">Project</a></li>
                 <li><a href="groupDairy.html" class="nav-link">Group Diary</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
 		       <li><a href="study.html" class="nav-link">Study</a></li>
-		       <li><a href="styleguide.html" class="nav-link active">Style Guide</a></li>
+		       <li><a href="styleguide.html" class="nav-link">Style Guide</a></li>
 <li><a href="result.html" class="nav-link">Result</a></li>
               </ul>
           
@@ -135,73 +88,173 @@ body {font-family: "Lato", sans-serif;}
 	  </div>
   <div style="background-color: #474f5b"><br><br><br>
 </div>
-  <br>
-	  <br>
-	   <h2 style="padding-left: 570px;font-weight: 900;color: black;">STYLE GUIDE</h2>
+  
       
-	  <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"style="font-family: &quot;Muli&quot;;font-weight: normal;">Layout</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')"style="font-family: &quot;Muli&quot;;font-weight: normal;">Font</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')"style="font-family: &quot;Muli&quot;;font-weight: normal;">Color Palette</button>
-<button class="tablinks" onclick="openCity(event, 'Germany')"style="font-family: &quot;Muli&quot;;font-weight: normal;">Image</button>
-<button class="tablinks" onclick="openCity(event, 'France')"style="font-family: &quot;Muli&quot;;font-weight: normal;">File and Directory</button>
-</div>
+	  <div style="padding-top: 100px;padding-left: 150px;">
 
-<div id="London" class="tabcontent" style="height: auto">
-  <center><h5 style="font-family: &quot;Muli&quot;;">HOME PAGE</h5>
-  <img src="lay1.png" width="700" height="auto">
-<h5 style="font-family: &quot;Muli&quot;;">OTHERS PAGE</h5>
-<img src="lay2.png" width="700" height="auto">
-</div>
+        <div class="container-fluid">
+          <ul class="nav nav-tabs " role="tablist">
+            <li class="nav-item ">
+              <a class="nav-link btn-light active" data-toggle="tab" href="#home">Typography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-light" data-toggle="tab" href="#menu1">Color</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-light" data-toggle="tab" href="#menu2">Component</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link btn-light" data-toggle="tab" href="#menu3">Layout</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn-light" data-toggle="tab" href="#menu4">image</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn-light" data-toggle="tab" href="#menu5">directory stucture</a>
+              </li>
+          </ul>
 
-<div id="Paris" class="tabcontent">
-    <h5 style="font-family: &quot;Muli&quot;;font-weight: normal;">Cả trang web</h5>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">+ Font-size: 18px</p> 
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">+ Font-family: Muli</p>
-  <h5 style="font-family: &quot;Muli&quot;;font-weight: normal;">Thanh Menu</h5>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">+ Font-size: 1.1rem</p>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">+ Font-weight: 300</p>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">+ Line-height: 1.7</p>
- <h5 style="font-family: &quot;Muli&quot;;font-weight: normal;">Content</h5>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">+ Title: h1</p>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">+ Paragraph: Font-normal</p>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="home" class="container-fluid tab-pane active"><br>
+                <h3 style="color: #0a0a0a" >1.Font family</h3>
+                <h4>Index-for Base</h4>
+                <p style="color: #0a0a0a"> 'Noto Sans', sans-serif,'Roboto','Aria'</p>
+                <hr>
+                <h3 style="color: #0a0a0a"><b>2.Typography</b></h3>
+                <h1 style="color: #0a0a0a ;font-size: 32px"><b>H1-Heading Title-32px</b></h1>
+                <h2 style="color: #0a0a0a ;font-size: 24px"><b>H2-Heading Title-24px</b></h2>
+                <h3 style="color: #0a0a0a ;font-size: 18px"><b>H3-Heading Title-18px</b></h3>
+                <h4 style="color: #0a0a0a ;font-size: 14px"><b>H4-Heading Title-14px</b></h4>
+                <h5 style="color: #0a0a0a ;font-size: 13px"><b>H5-Heading Title-13px</b></h5>
+                <h6 style="color: #0a0a0a ;font-size: 11px"><b>H6-Heading Title-11px</b></h6>
+                <h7 style="color: #0a0a0a ;font-size: 10px"><b>H7-Heading Title-10px</b></h7>
+                <hr>
+                <h3 style="color: #0a0a0a"><b>3.Other</b></h3>
+                <h3 style="color: #0a0a0a ;font-size: 18px">3.1 Slideshow</h3>
+                <h3 style="color: #0a0a0a ;font-size: 18px"><b>Caption-text-4vw</b></h3>
+                <h3 style="color: #0a0a0a ;font-size: 18px">3.2 Product.css</h3>
+                <h3 style="color: #0a0a0a ;font-size: 18px"><b>    highlight .product-info .product-name-20px</b></h3>
+            </div>
+            <div id="menu1" class="container-fluid tab-pane fade"><br>
+                <center> <h3 style="color: #0a0a0a ;"><b>Color-Project</b></h3></center>
+                <center><img width="800" src="images/color.png" ></center>
+                <hr>
+                <center> <h3 style="color: #0a0a0a ;"><b>Color-GroupWeb</b></h3></center>
+                <center><img width="800" src="images/color1.png" ></center>
+            </div>
+            <div id="menu2" class="container-fluid tab-pane fade"><br>
 
-</div>
+                <h3 style="color: #0a0a0a" >1.Form</h3>
+                <label style="color: #0a0a0a"><b>Input</b></label>
+                <input style="font-size: 16px" class="form-control">
+                <label style="color:#0a0a0a;"><b>CheckBox</b></label>
+                <input type="checkbox" >
+                <input checked="checked" type="checkbox" >
+                <br>
+                <label style="color:#0a0a0a;"><b>Search</b></label>
+                <br>
+                <input style="position: relative;
+    width: 90%;
+    border: 3px solid #762C8E;
+    padding: 0px;
+    height:30px;
+    border-radius: 5px;
+    outline: none;
+    color: white;">
+                <hr>
+                <h3 style="color: #0a0a0a" >2.icon</h3>
+                <center><img width="800" src="icon.JPG" height="65px" width="100%" ></center>
+                <hr>
+                <h3 style="color: #0a0a0a" >3.button</h3>
+                <label>button-1</label>
+                <button class="btn btn-success" style="color:green">button</button>
+                <label>button-2</label>
 
-<div id="Tokyo" class="tabcontent">
-<center><img src="color.png" width="700" height="auto"></center>
+                <button class="btn" style="font-size: 13px;
+    padding: 10px;
+    line-height: 69.5px;
+    bottom: 0px;
+    right: 0;
+    color: #ffffff;
+    background:#762C8E ;
+    padding-right: 10px;
+    transition: 0.5s;">Button buy</button>
+                <label>button-3</label>
 
-</div>
-<div id="Germany" class="tabcontent">
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">Logo header: 100 x 25px </p><br>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">Banner: 1400 x 700px</p><br>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">About members: 145 x 145px</p><br>
-<p style="font-family: &quot;Muli&quot;;font-weight: normal;">Contact: 400 x 700px</p>
+                <button style="background-color: #762C8E;
+    color: white;
+width: 145px;
+height: 74px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);">button</button>
 
-</div>
-<div id="France" class="tabcontent">
+            </div>
+              <div id="menu3" class="container-fluid tab-pane fade"><br>
+                  <h3 style="color: #0a0a0a"><b>1.Layout-project</b></h3>
+                  <img src="images/index.JPG" width="">
+                  <hr>
+                  <h3 style="color: #0a0a0a"><b>2.Layout-group web </b></h3>
+                  <img src="images/lay1.png">
+                  <hr>
+                  <h3 style="color: #0a0a0a"><b>3.Layout-group web</b></h3>
+                  <img src="images/lay2.png">
+              </div>
+                  <div id="menu4" class="container-fluid tab-pane fade"><br>
+                      <h3 style="color: #0a0a0a"><b>1.Baner-index1</b></h3>
+                      <img src="images/baner1.jpg" >
+                      <hr>
+                      <h3 style="color: #0a0a0a"><b>2.Baner-index2</b></h3>
+                      <img src="images/baner2.jpg" >
+                      <hr>
+                      <h3 style="color: #0a0a0a"><b>3.image-product</b></h3>
+                      <div class="row">
+                              <img src="images/baner3.JPG" width="191" height="270">
 
+                                  <img src="images/Capture.JPG" width="172" height="170">
+                  </div>
+                      <hr>
+                      <h3 style="color: #0a0a0a"><b>3.icon</b></h3>
+                      <div class="row">
+                          <img src="images/icon1.png" width="64" height="64">
+                          <img src="images/icon2.png" width="32" height="32">
+                      </div>
+                  </div>
+                      <div id="menu5" class="container-fluid tab-pane fade"><br>
+                          <h3 style="color: #0a0a0a"><b>1.Directory Structure of project Web</b></h3>
+<img src="images/project.png" width="100%" height="100%">
+                          <hr>
+                          <h3 style="color: #0a0a0a"><b>1.Directory Structure of Group Web</b></h3>
+                         <img src="images/web.png" width="100%" height="100%">
 
-</div>
+                         <hr>
+                      </div>
+              </div>
+        </div>
+		  
+		  <div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
 
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+  
+  <script src="js/main.js"></script>
+    
   </body>
 </html>
 
